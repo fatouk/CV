@@ -75,3 +75,7 @@
 .icon {
     margin-right: .5rem;
 }
+
+.experience-list {
+    list-style-type: circle;
+}
