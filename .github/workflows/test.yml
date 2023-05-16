@@ -1,0 +1,22 @@
+name: Mon workflow a moi
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout du code
+      uses: actions/checkout@v2
+
+    # Ajoutez ici les étapes supplémentaires que vous souhaitez exécuter lors du push
+    # Par exemple, vous pouvez exécuter des tests, des linters, des compilations, etc.
+    # Voici un exemple simple qui affiche un message à la sortie
+
+    - name: Exécuter mon action
+      run: |
+        echo "Mon action a été exécutée après un push"
